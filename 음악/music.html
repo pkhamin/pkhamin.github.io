@@ -1,1 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>순천 소개</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Pretendard', sans-serif;
+      font-size: 20px;
+      background-color: aqua;
+      overflow-x: hidden;
+      line-height: 150%;
+    }
+
+
+    .bg {
+      color: #fff;
+      width: 100vw;
+      min-height: 100vh;
+      background: linear-gradient(-45deg,
+          hsl(232, 65%, 38%),
+          hsl(252, 65%, 38%),
+          hsl(272, 65%, 38%),
+          hsl(292, 65%, 38%),
+          hsl(312, 65%, 38%),
+          hsl(332, 65%, 38%),
+          hsl(0, 65%, 38%));
+      background-size: 300% 300%;
+      animation: colorChange 10s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+
+    @keyframes colorChange {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    #main {
+      width: 100vw;
+      max-width: 800px;
+      min-height: 100vh;
+
+      background-color: white;
+      color: black;
+      text-align: left;
+      padding: 4rem;
+      box-sizing: border-box;
+      border-radius: 1rem;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+      font-size: 1rem;
+
+    }
+
+    .head {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      gap: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    .head img {
+      width: 150px;
+      height: auto;
+    }
+
+    .intro {
+      font-size: 2rem;
+      line-height: 150%;
+    }
+
+    .img-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .img-container img {
+      height: 200px;
+      width: auto;
+      border-radius: 8px;
+    }
+
+
+    .text {
+      margin: 20px 0 20px 0;
+    }
+
+    /* .nav {
+      position: fixed;
+      top: 0;
+      background: white;
+      width: 100%;
+      padding: 10px;
+      z-index: 1000;
+    } */
+     
+  </style>
+</head>
+
+<body>
+  <div class="bg">
+    <div id="main">
+      <div class="head">
+
+        <div class="intro">제가 좋아하는 음악을 소개합니다🎵</div>
+      </div>
+      <div class="nav">
+        <a href="#classic">클래식</a>
+        <a href="#jazz">재즈</a>
+        <a href="#rock">락</a>
+      </div>
+
+      <section id="classic">
+        <h2>클래식</h2>
+        <p>클래식을 좋아하세요? <br>고전은 고전인 이유가 있는 법.<br>관현악의 조화로운 선율을 듣다 보면 마음의 안정이 찾아옵니다. <br>공부할 때 들으면 집중이 잘 되는 효과가 있고, 잠 못 들 때 들으면 쉽게 잠에 들 수 있어 평소에 자주 듣습니다.</p>
+      </section>
+
+      <section id="jazz">
+        <h2>재즈</h2>
+        <p>재즈 음악 소개 콘텐츠...</p>
+      </section>
+
+      <section id="rock">
+        <h2>락</h2>
+        <p>락 음악 소개 콘텐츠...</p>
+      </section>
+
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
