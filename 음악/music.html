@@ -57,7 +57,7 @@
     }
 
     #main {
-      width: 100vw;
+      width: 100%;
       max-width: 800px;
       min-height: 100vh;
 
@@ -68,8 +68,8 @@
       box-sizing: border-box;
       border-radius: 1rem;
       box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-      
-
+      font-size:1rem;
+      margin:0 auto;
     }
 
     
@@ -81,8 +81,12 @@
       gap: 1.5rem;
       font-weight: bold;
       margin-bottom: 2rem;
+      
+      
+    }
+    .intro {
       font-size: 2rem;
-      line-height: 150%;
+      line-height:150%;
     }
 
     .nav {
@@ -115,7 +119,7 @@
   <div class="bg">
     <div id="main">
       <div class="head">
-        제가 좋아하는 음악을 소개합니다🎵 </div>
+        <div class="intro">제가 좋아하는 음악을 소개합니다🎵</div> </div>
       <div class="nav">
         <ol>
           <li><a href="#classic">클래식</a> </li>
