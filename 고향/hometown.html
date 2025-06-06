@@ -5,193 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>순천 소개</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Pretendard',sans-serif;
-      font-size: 20px;
-      background-color: white;
-      overflow-x: hidden;
-      line-height:150%;
-    }
-   
-
-    .bg {
-      color: #fff;
-      width: 100vw;
-      min-height: 100vh;
-      background: linear-gradient(-45deg,
-          hsl(232, 65%, 38%),
-          hsl(252, 65%, 38%),
-          hsl(272, 65%, 38%),
-          hsl(292, 65%, 38%),
-          hsl(312, 65%, 38%),
-          hsl(332, 65%, 38%),
-          hsl(0, 65%, 38%));
-      background-size: 300% 300%;
-      animation: colorChange 10s ease infinite;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 2rem;
-      box-sizing: border-box;
-    }
-
-    @keyframes colorChange {
-      0% {
-        background-position: 0% 50%;
-      }
-
-      50% {
-        background-position: 100% 50%;
-      }
-
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-
-    #main {
-      width: 100vw;
-      max-width: 800px;
-      min-height: 100vh;
-      
-      background-color: white;
-      color: black;
-      text-align: left;
-      padding: 4rem;
-      box-sizing: border-box;
-      border-radius: 1rem;
-      box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-      font-size: 1rem;
-      
-    }
-
-    .head {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1.5rem;
-      font-weight: bold;
-      margin-bottom: 2rem;
-    }
-
-    .head img {
-      width: 150px;
-      height: auto;
-    }
-
-    .intro {
-      font-size: 2rem;
-      line-height:150%;
-    }
-
-    .img-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .img-container img {
-      height: 200px;
-      width: auto;
-      border-radius: 8px;
-    }
-
-    /* 캐러셀 스타일 */
-    .carousel {
-      position: relative;
-      width: 300px;
-      max-width: 300px;
-      height: 200px;
-      overflow: hidden;
-      border-radius: 8px;
-      aspect-ratio: 3 / 2;
-    }
-
-    .carousel input[type="radio"] {
-      display: none;
-    }
-
-    .carousel .slides {
-      display: flex;
-      width: 100%;
-      height: 100%;
-      transition: transform 0.5s ease-in-out;
-      margin: 0 auto;
-      padding: 0;
-    }
-
-    .carousel .slides li {
-      list-style: none;
-      flex: 0 0 100%;
-    }
-
-    .carousel .slides img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-
-    }
-
-    .carousel .navigation {
-      position: absolute;
-      width: 100%;
-      bottom: 10px;
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-    }
-
-    .carousel .navigation label {
-      width: 12px;
-      height: 12px;
-      background-color: #ccc;
-      border-radius: 50%;
-      cursor: pointer;
-      transition: background-color 0.3s, transform 0.2s;
-    }
-
-    #slide1:checked~.slides {
-      transform: translateX(0%);
-    }
-
-    #slide2:checked~.slides {
-      transform: translateX(-100%);
-    }
-
-    #slide3:checked~.slides {
-      transform: translateX(-200%);
-    }
-
-    #slide4:checked~.slides {
-      transform: translateX(-300%);
-    }
-
-    #slide1:checked~.navigation label[for="slide1"],
-    #slide2:checked~.navigation label[for="slide2"],
-    #slide3:checked~.navigation label[for="slide3"],
-    #slide4:checked~.navigation label[for="slide4"] {
-      background-color: #fff;
-      transform: scale(1.4);
-    }
-    .text {
-      margin:20px 0 20px 0;
-    }
-  
-    .link:hover {
-      font-weight:bold;
-    }
-  </style>
+  <link rel="stylesheet" href="hometown_style.css">
+  <link rel="stylesheet" href ="../bg_style.css">
 </head>
 
 <body>
   <div class="bg">
-    <div id="main">
+    <main>
       <div class="head">
         <img src="순천_마스코트.svg" />
         <div class="intro">저의 고향, <span style="color:green;">순천</span>을 소개합니다!</div>
@@ -230,7 +50,7 @@
         이어지는 <a href="https://scbay.suncheon.go.kr/wetland/" target="_blank" class="link"  style="color:brown; ">순천만습지</a>는 세계 멸종위기종인 흑두루미 개체군의 절반이 서식하는 중요한 생태지역으로, 순천이 지닌 생태적·문화적 가치를 동시에 경험할 수 있는 유네스코 세계자연유산이기도 합니다.<br>
         깨끗하고 한적한 분위기 덕분에 갈 때마다 마음이 편해지는 저의 고향입니다.
       </div>
-    </div>
+    </main>
   </div>
 </body>
 

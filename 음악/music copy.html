@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>음악 소개</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Pretendard', sans-serif;
+      font-size: 20px;
+      background-color: aqua;
+      overflow-x: hidden;
+      line-height: 150%;
+    }
+
+
+    .bg {
+      color: #fff;
+      width: 100vw;
+      min-height: 100vh;
+      background: linear-gradient(-45deg,
+          hsl(232, 65%, 38%),
+          hsl(252, 65%, 38%),
+          hsl(272, 65%, 38%),
+          hsl(292, 65%, 38%),
+          hsl(312, 65%, 38%),
+          hsl(332, 65%, 38%),
+          hsl(0, 65%, 38%));
+      background-size: 300% 300%;
+      animation: colorChange 10s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+
+    @keyframes colorChange {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    #main {
+      width: 100vw;
+      max-width: 800px;
+      min-height: 100vh;
+
+      background-color: white;
+      color: black;
+      text-align: left;
+      padding: 3.5rem;
+      box-sizing: border-box;
+      border-radius: 1rem;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+      font-size: 1rem;
+
+    }
+
+    .head {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      gap: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    
+
+    .intro {
+      font-size: 2rem;
+      line-height: 150%;
+    }
+
+
+    
+
+    /* .nav {
+      position: fixed;
+      top: 0;
+      background: white;
+      width: 100%;
+      padding: 10px;
+      z-index: 1000;
+    } */
+     /* section {
+      margin-bottom:10%;
+     } */
+     .caption {
+      text-align:center;
+      font-size:1rem;
+      color:grey;
+      margin:0;
+     }
+
+     section{
+      /* margin-left:1rem;
+      margin-right:1rem; */
+      
+     }
+     .box {
+      border:dotted 1px black;
+      /* border-radius:1rem; */
+      padding:1rem;
+      background-color: antiquewhite;
+      margin-bottom:10%;
+     }
+  </style>
+</head>
+
+<body>
+  <div class="bg">
+    <div id="main">
+      <div class="head">
+
+        <div class="intro">제가 좋아하는 음악을 소개합니다🎵</div>
+      </div>
+      <div class="nav">
+        <a href="#classic">클래식</a>
+        <a href="#jazz">재즈</a>
+        <a href="#rock">X JAPAN</a>
+      </div>
+      <div class="box" style="margin-top:10%;">
+      <section id="classic">
+        <h2>클래식</h2>
+        <p>
+          클래식을 좋아하시나요? <br>
+          고전은 오랜 세월 사랑받아온 이유가 있는 법이죠.<br>
+          관현악의 조화로운 선율을 듣고 있으면 마음이 편안해지고 안정감을 느낄 수 있습니다.<br>
+          집중이 잘 되지 않을 때나 잠이 오지 않을 때 들으면 효과적이라 평소에 자주 듣는 편입니다.
+        </p>
+        <video src="classic_pasdedeux.mp4" controls width="100%" height="315"></video>
+        <p class="caption">Tchaikovsky - pas de deux</p>
+        <p>
+          클래식 곡 중에서도 특히 좋아하는 작품은 차이콥스키의 발레 음악 호두까기 인형 중 <b>'파드되(pas de deux)'</b>입니다.<br>
+          이 곡과 함께 매년 연말에 열리는 호두까기 인형 발레 공연도 꼭! 추천드리고 싶습니다.
+        </p>
+      </section></div>
+
+
+      <section id="jazz">
+        <h2>재즈</h2>
+        <p>
+          재즈는 자유롭고 즉흥적인 매력이 있는 음악입니다.<br>
+          복잡한 리듬과 재밌는 멜로디가 듣는 사람 기분을 끌어올려 줍니다.<br>
+          집중하고 싶을 때보다는 여유를 즐기고 싶을 때 자주 듣습니다.
+        </p>
+        <video src="jazz_butnotforme.mp4" controls width="100%" height="315"></video>
+        <p class="caption">Chet Baker - But Not for Me</p>
+        <p>
+          재즈 중에서도 쳇 베이커(Chet Baker)의 연주를 가장 좋아합니다. <br>
+          특히 <b>'But Not for Me'</b>와 <b>'I Fell in Love Too Easily'</b>는 멜로디가 너무 좋아서 기분전환하기에 딱인 곡입니다.<br>
+          재즈를 처음 접하신다면 이 곡들부터 들어보시는 걸 추천드립니다!
+        </p>
+      </section>
+
+
+      <section id="rock">
+        <h2>X JAPAN</h2>
+        <p>전설의 일본 록 밴드 X JAPAN의 노래를 자주 듣습니다. <br>잔잔한 <b>'Tears'</b>부터 빠른 템포로 달리는 <b>'紅(Kurenai)'</b>까지 감정의 폭이 넓은 음악들이 매력적입니다!</p>
+        <video src ="rock_tears.mp4" controls width="100%" height="315"></video>
+        <p class="caption">X JAPAN - tears</p>
+      </section>
+
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>

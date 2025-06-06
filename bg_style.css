@@ -1,0 +1,35 @@
+/* 세부주제 페이지만 해당 */
+.bg {
+      color: #fff;
+      width: 100vw;
+      min-height: 100vh;
+      background: linear-gradient(-45deg,
+          hsl(232, 65%, 38%),
+          hsl(252, 65%, 38%),
+          hsl(272, 65%, 38%),
+          hsl(292, 65%, 38%),
+          hsl(312, 65%, 38%),
+          hsl(332, 65%, 38%),
+          hsl(0, 65%, 38%));
+      background-size: 300% 300%;
+      animation: colorChange 10s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+
+    @keyframes colorChange {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
