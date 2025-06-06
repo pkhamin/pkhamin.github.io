@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>추천하고 싶은 식당 소개</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Pretendard', sans-serif;
+      font-size: 20px;
+      background-color: aqua;
+      overflow-x: hidden;
+      line-height: 150%;
+    }
+
+
+    .bg {
+      color: #fff;
+      width: 100vw;
+      min-height: 100vh;
+      background: linear-gradient(-45deg,
+          hsl(232, 65%, 38%),
+          hsl(252, 65%, 38%),
+          hsl(272, 65%, 38%),
+          hsl(292, 65%, 38%),
+          hsl(312, 65%, 38%),
+          hsl(332, 65%, 38%),
+          hsl(0, 65%, 38%));
+      background-size: 300% 300%;
+      animation: colorChange 10s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+
+    @keyframes colorChange {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    #main {
+      width: 100vw;
+      max-width: 800px;
+      min-height: 100vh;
+
+      background-color: white;
+      color: black;
+      text-align: left;
+      padding: 4rem;
+      box-sizing: border-box;
+      border-radius: 1rem;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+      font-size: 1rem;
+
+    }
+
+    .head {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      gap: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      line-height: 150%;
+    }
+
+    .container_1,
+    .container_2 {
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    .container_1 img {
+      width: 24.5%;
+      height: auto;
+    }
+
+    .container_2 img {
+      width: 33%;
+      height: auto;
+    }
+
+    .caption {
+      text-align: center;
+      font-size: 1rem;
+      color: grey;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg">
+    <div id="main">
+      <div class="head">갓성비 무한리필 샤브샤브집 <br><span style="color:#3cb035;">‘편편집’</span> 추천합니다!</div>
+
+      <p>저의 최애음식은 샤브샤브인데요, 일주일에 두 번은 먹어야 할 만큼 정말 좋아합니다. </p>
+      <div class="container_1">
+        <img src="food1.jpg" alt="샤브샤브 이미지1">
+        <img src="food2.jpg" alt="샤브샤브 이미지2">
+        <img src="food3.jpg" alt="샤브샤브 이미지3">
+        <img src="food4.jpg" alt="샤브샤브 이미지4">
+      </div>
+      <p class="caption">샤브샤브 탐방기✨</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.0579573755444!2d126.8364243!3d37.3174548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6f004cfc44cd%3A0x5fed5134c612ae09!2z7Y647Y647KeRIOyViOyCsOykkeyVmeygkA!5e0!3m2!1sko!2skr!4v1749195785865!5m2!1sko!2skr"
+        width="100%" height="200" style="border:0; border-radius: 0.5rem; margin-top: 5rem;" allowfullscreen
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <p>여러 식당을 가봤지만 그 중에서도 <b>‘편편집’</b>은 제가 애정하고 정말 좋아하는 샤브샤브집입니다. <br>
+        무한리필인데도 맛있고 가성비도 정말 좋아서 소개하고 싶습니다!
+        <br>
+        저는 주로 학교에서 제일 가까운 안산중앙점을 가는데 가게도 넓고 깔끔해서 친구랑 가볍게 식사하기 좋아요. <br><br>
+      </p>
+
+
+
+
+      <div class="container_2">
+        <img src="image1.jpg">
+        <img src="image2.jpg">
+        <img src="image3.jpg">
+      </div>
+      <p>
+        샐러드바 구성도 잘 되어 있고, 고기 질도 생각보다 괜찮아서 정말 좋았습니다.
+        <br> 편백찜을 포함하여 샤브샤브 재료는 모두 무한리필이 가능하니 꼭 한 번쯤은 드셔보셨으면 좋겠습니다❤️‍🔥
+      </p>
+
+    </div>
+  </div>
+</body>
+
+
+</html>
